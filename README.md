@@ -1,100 +1,254 @@
-# Brain-AI
+# 🧠 Brain-AI — Multi-Agent Cognitive System
 
 ![Brain-AI Logo](https://vectorportal.com/storage/circuit-brain-vector.jpg)
 
-## Description
+Brain-AI is a **multi-agent orchestration system with hybrid memory and LLM routing**, designed to enhance reasoning, context management, and code generation for AI-assisted software development.
 
-**Brain-AI** is an innovative project aimed at creating an "efficient brain" for artificial intelligence systems. It integrates tools such as **Obsidian**, **SQLite3**, and **Cbor2** to optimize context management, reduce token consumption, and minimize hallucinations in LLMs (Large Language Models), whether online or local. The goal is to provide a solid foundation for daily use journeys, allowing AI to maintain consistency and efficiency across diverse contexts without overburdening computational resources.
-
-This repository serves as a starting point for developers interested in improving interactions with LLMs, focusing on efficient data storage, fast information retrieval, and seamless integration between productivity tools and lightweight databases.
-
-## Main Features
-
-- **Obsidian Integration**: Utilizes the power of Obsidian to create and manage interconnected knowledge bases, allowing AI to navigate notes and contexts intuitively.
-- **SQLite3 Storage**: Lightweight and efficient database for storing structured data, reducing latency and optimizing access to historical information.
-- **CBOR2 Serialization**: Employs CBOR (Concise Binary Object Representation) for data compression and serialization, minimizing the use of tokens in interactions with LLMs and accelerating processing.
-- **Support for Online and Local LLMs**: Compatible with models such as GPT, Llama, or others, ensuring that AI avoids confusion between different contexts, promoting more accurate and contextually relevant responses.
-- **Hallucination Reduction**: Algorithms designed to filter and prioritize relevant information, avoiding unwanted digressions in conversations or tasks.
-
-## Technologies Used
-
-- **Obsidian**: For knowledge management and interconnected notes.
-- **SQLite3**: Lightweight relational database for persistent storage.
-- **Cbor2**: Library for efficient binary serialization.
-- **Python** (or other languages as per implementation): Main language for development.
-- **LLM APIs**: Integration with services such as OpenAI, Hugging Face, or local models via Ollama.
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/josemarpoubel/brain-ai.git
-   cd brain-ai
-   ```
-
-2. Install the dependencies (example with Python):
-   ```bash
-   pip install -r requirements.txt
-   ```
-   Make sure Obsidian is installed and configured on your system.
-
-3. Configure the SQLite3 database:
-   - Run the initialization script to create the database:
-     ```bash
-     python setup_db.py
-     ```
-
-4. For integration with local LLMs, install tools like Ollama or similar.
-
-## Usage
-
-1. **Initial Setup**:
-   - Import your notes from Obsidian into the system.
-   - Configure credentials for online LLMs (if applicable).
-
-2. **Basic Execution**:
-   - Run the main script:
-     ```bash
-     python brain_ai.py --query "Your question here"
-     ```
-   - The system will query the database, serialize data with CBOR, and interact with the LLM to generate optimized responses.
-
-3. **Integration Example**:
-   - To avoid hallucinations: Brain-AI filters relevant contexts before sending prompts to the LLM, reducing unnecessary tokens.
-
-For more details, consult the internal documentation or the examples in the `examples/` directory.
-
-## Contribution
-
-Contributions are welcome! Follow these steps:
-
-1. Fork the repository.
-2. Create a branch for your feature: `git checkout -b feature/new-feature`.
-3. Commit your changes: `git commit -m 'Adds new feature'`.
-4. Push to the branch: `git push origin feature/new-feature`.
-5. Open a Pull Request.
-
-Please follow the code guidelines and include tests for new features.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
-
-## Roadmap
-
-- [ ] Advanced support for multiple LLMs.
-- [ ] Web interface for context management.
-- [ ] Optimizations for mobile devices.
-- [ ] Integration with additional tools such as Notion or Roam Research.
-
-## Contact
-
-- **Author**: Josemar Poubel
-- **Email**: josemarpoubel@msn.com
-- **GitHub**: [Josemar Poubel](https://github.com/josemarpoubel)
-
-For questions or suggestions, please open an issue in the repository.
+It provides a structured architecture that combines **semantic memory, structured databases, and compressed caching**, enabling LLMs to operate with reduced hallucination, improved context retention, and task decomposition capabilities.
 
 ---
 
-*Last updated: Sunday, April 19, 2026*
+# 🎯 Core Objective
+
+Brain-AI is designed to act as a **cognitive layer for LLM systems**, enabling:
+
+- Structured task decomposition
+- Persistent and retrievable memory
+- Multi-agent collaboration
+- Context optimization for LLMs
+- Reduced hallucination through retrieval and validation loops
+
+---
+
+# 🧠 System Architecture Overview
+
+Brain-AI is composed of four primary layers:
+
+## 1. Orchestration Layer (Core Brain)
+
+The central system responsible for:
+- Interpreting user requests
+- Decomposing tasks into subtasks
+- Routing tasks to specialized agents
+- Managing execution flow and state
+
+This layer acts as the **decision-making engine** of the system.
+
+---
+
+## 2. Agent Layer (Specialized Cognitive Units)
+
+Brain-AI uses modular agents, each responsible for a specific cognitive function:
+
+### 🧩 Planner Agent
+- Breaks complex requests into structured tasks
+- Defines execution order and dependencies
+
+### 💻 Coder Agent
+- Generates source code
+- Implements solutions based on specifications
+
+### 🔍 Reviewer Agent
+- Validates generated code
+- Suggests improvements in architecture and logic
+
+### 🧠 Memory Agent
+- Reads and writes to the memory system
+- Retrieves relevant contextual information
+
+### 🧪 Tester Agent (optional expansion)
+- Generates and executes tests
+- Validates system correctness
+
+---
+
+## 3. Memory Layer (Hybrid Cognitive Storage)
+
+Brain-AI uses a **multi-layered memory architecture**:
+
+### 📓 Obsidian (Semantic Memory)
+- Markdown-based knowledge graph
+- Human-readable contextual knowledge
+- Long-term semantic storage
+
+### 🗄 SQLite3 + FTS5 (Structured Memory)
+- Fast structured storage layer
+- Full-text search indexing
+- Task history and execution logs
+
+### 📦 CBOR2 (Compressed Cache Layer)
+- High-performance binary serialization
+- Temporary context storage
+- Reduced token usage for LLM interactions
+
+---
+
+## 4. LLM Layer (Intelligence Interface)
+
+Brain-AI supports multiple model providers:
+
+### 🌐 Cloud LLMs
+- OpenAI API
+- OpenRouter
+- Other compatible providers
+
+### 🧠 Local Models
+- Ollama
+- Llama.cpp
+- Offline inference systems
+
+This abstraction allows **model-agnostic reasoning execution**.
+
+---
+
+# 🔄 Execution Flow
+
+The system follows a structured reasoning pipeline:
+
+```text
+User Input
+   ↓
+Orchestration Layer
+   ↓
+Planner Agent (Task Decomposition)
+   ↓
+Agent Dispatch (Coder / Reviewer / Memory)
+   ↓
+Execution & Generation
+   ↓
+Memory Update (Obsidian + SQLite + CBOR)
+   ↓
+Final Response
+````
+
+---
+
+# 🧩 Key Design Principles
+
+## 1. Modular Intelligence
+
+Each agent is independent, replaceable, and specialized.
+
+## 2. Memory-Centric Design
+
+System performance improves through accumulated knowledge and retrieval.
+
+## 3. Retrieval-Augmented Reasoning
+
+Context is dynamically retrieved from structured and semantic memory layers.
+
+## 4. LLM-Agnostic Architecture
+
+The system is independent of any single LLM provider.
+
+## 5. Feedback Loop Execution
+
+Every generated output can be reviewed, validated, and refined by agents.
+
+---
+
+# 📁 Project Structure
+
+```text
+/project-root
+│
+├── core/                 # Orchestration engine
+├── agents/               # Cognitive agents
+│   ├── planner.py
+│   ├── coder.py
+│   ├── reviewer.py
+│   ├── memory.py
+│   └── tester.py
+│
+├── memory/               # Hybrid memory system
+│   ├── obsidian/
+│   ├── sqlite/
+│   └── cache/
+│
+├── llm/                  # Model abstraction layer
+│   ├── local.py
+│   └── openrouter.py
+│
+├── execution/           # Sandbox execution layer (future)
+├── tools/               # Utility functions
+├── config/              # System configuration
+└── logs/                # Execution logs
+```
+
+---
+
+# ⚙️ Technology Stack
+
+* Python (core orchestration)
+* Obsidian (semantic knowledge base)
+* SQLite3 + FTS5 (structured retrieval)
+* CBOR2 (binary compression layer)
+* OpenAI / OpenRouter APIs
+* Ollama / Local LLMs
+
+---
+
+# 🚀 Roadmap
+
+## Phase 1 — MVP Core System
+
+* CLI interface
+* Orchestrator implementation
+* Planner + Coder agents
+* SQLite-based memory
+
+## Phase 2 — Cognitive Expansion
+
+* Reviewer + Memory agents
+* Obsidian integration
+* CBOR caching system
+
+## Phase 3 — Hybrid Intelligence
+
+* OpenRouter integration
+* Local LLM routing
+* Advanced retrieval system
+
+## Phase 4 — Secure Execution Layer
+
+* Sandbox execution environment
+* Agent permission system
+* Secure code execution pipeline
+
+---
+
+# 🧠 Expected System Behavior
+
+Brain-AI is designed to behave as:
+
+* A task decomposition engine for complex requests
+* A memory-enhanced reasoning system
+* A multi-agent software development assistant
+* A modular cognitive architecture for LLM systems
+
+---
+
+# ⚠️ Non-Goals
+
+* This project is not a single-model chatbot
+* It is not dependent on a specific LLM provider
+* It is not a static prompt engineering system
+
+---
+
+# 📌 Summary
+
+Brain-AI is a **modular cognitive architecture for AI-assisted development**, combining:
+
+* Multi-agent orchestration
+* Hybrid memory systems
+* LLM abstraction layers
+* Retrieval-augmented reasoning
+
+Its goal is to create a **structured and scalable intelligence layer for software generation and problem solving**.
+
+---
+
+# 📄 License
+
+MIT License — open for modification and research use.
