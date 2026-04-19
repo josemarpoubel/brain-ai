@@ -1,6 +1,6 @@
 # Brain-AI
 
-![Brain-AI Logo](https://drive.google.com/file/d/1Ngd9T72qoEDHnz_sJdPe0u5TE-01rxbq/view/brain-ai.png)
+![Brain-AI Logo](https://vectorportal.com/storage/circuit-brain-vector.jpg)
 
 ## Description
 
