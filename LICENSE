@@ -1,21 +1,120 @@
-MIT License
+# 📜 LICENSE — brain-ai
 
-Copyright (c) 2026 Josemar Poubel
+## Open Protocol License
+
+*(MIT-Compatible)*
+
+---
+
+## Preamble — Statement of Intent
+
+brain-ai was created to explore a fundamental question:
+
+> *What remains of communication when infrastructure disappears?*
+
+This project exists as a **protocol**, not a product.
+As an **idea**, not a service.
+As an **experiment in resilience**, not control.
+
+The intent of brain-ai is to enable communication:
+
+* without central authorities
+* without fixed infrastructure
+* without semantic assumptions in transit
+* without exclusion by geography, power, or technology
+
+This license exists to **guarantee freedom of use**, while preserving the **ethical neutrality** and **open survival** of the protocol.
+
+Authorship is acknowledged.
+Control is not imposed.
+
+— *josemarpoubel*
+
+---
+
+## Copyright
+
+Copyright © 2026
+Josemar Poubel
+All contributors retain copyright over their respective contributions.
+
+---
+
+## License Grant (MIT)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
+of this software and associated documentation files (the “Software”), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+## Conditions
+
+The above copyright notice and this permission notice **shall be included in
+all copies or substantial portions of the Software**.
+
+---
+
+## Disclaimer of Warranty
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+---
+
+## Protocol Neutrality Clause (Non-Restrictive)
+
+This license does **not** impose restrictions on:
+
+* fields of use
+* political systems
+* economic models
+* civil, academic, commercial, or extraterrestrial applications
+
+brain-ai is **agnostic by design**.
+
+Any ethical, legal, or operational responsibility arising from the use of this
+protocol belongs solely to the user or implementing party.
+
+---
+
+## Survival Clause
+
+If this project is forked, mirrored, fragmented, archived, or transmitted
+across unreliable, censored, or hostile networks, this license is intended to
+**survive intact**, even when context does not.
+
+Fragments may be lost.
+Meaning must remain free.
+
+---
+
+## Attribution
+
+This project was conceived and initiated by **Josemar Poubel**.
+Contributions are welcome, credited, and preserved.
+
+Identity is acknowledged.
+Authority is not enforced.
+
+---
+
+## Final Note
+
+brain-ai does not seek dominance.
+It seeks persistence.
+
+If it is useful, it will propagate.
+If not, it will fade — without resistance.
+
+That, too, is freedom.
+
+---
