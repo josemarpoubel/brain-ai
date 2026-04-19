@@ -1,6 +1,6 @@
 # Brain-AI
 
-![Brain-AI Logo](https://drive.google.com/file/d/1Ngd9T72qoEDHnz_sJdPe0u5TE-01rxbq/view)
+![Brain-AI Logo](https://drive.google.com/file/d/1Ngd9T72qoEDHnz_sJdPe0u5TE-01rxbq/view/brain-ai.png)
 
 ## Description
 
@@ -98,4 +98,3 @@ For questions or suggestions, please open an issue in the repository.
 ---
 
 *Last updated: Sunday, April 19, 2026*
-```
